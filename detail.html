@@ -10,15 +10,39 @@
     <body>
         <header>
             <article>
-                <img height="100px" width="150px" src="assests/images/logo.png" alt="logo" />
-                <a href="login.html" target="_blank">Login</a>
+                <a href="index.html">
+                    <img height="100px" width="150px" src="assests/images/logo.png" alt="logo" />
+                </a>
+                <a href="login.html" target="_self">Login</a>
             </article>
         </header>
         <section>
             <article>
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson blu hotel" />
                 <br/>
-                <a href="payment.html">Book Now</a>
+                <form action="payment.html" method="get">
+                    <div>
+                        <label for="adults">Adults:</label>
+                        <input type="number" name="adults" id="adults" min="1" value="1"/>
+                    </div>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" required/>
+                    </div>
+                    <div>
+                        <label for="checkin_date">From Date:</label>
+                        <input type="date" name="checkin_date" id="checkin_date" required/>
+                    </div>
+                    <div>
+                        <label for="checkout_date">To Date:</label>
+                        <input type="date" name="checkout_date" id="checkout_date" required/>
+                    </div>
+                    <div>
+                        <label for="price">Total:</label>
+                        <input type="text" name="price" id="price" disabled required/>
+                    </div>
+                    <input type="submit" value="Book Now"/>
+                </form>
                 <h2>Radisson Blu Hotel</h2>
                 <p>RATING</p>
                 <p>5 Star</p>
@@ -36,7 +60,7 @@
             </article>
         </section>
         <footer>
-            <article><a href="contact.html" target="_blank">Contact Us</a></article>
+            <article><a href="contact.html" target="_self">Contact Us</a></article>
             <article>
                 <nav>
                     <a href="http://www.facebook.com" target="_blank"><img height="20px" width="22px" src="assests/images/facebook.png" alt="facebook"></a>
