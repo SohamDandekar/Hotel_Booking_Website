@@ -1,4 +1,18 @@
 .hotel_image{
     height: 500px;
     width: 500px;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+form{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+}
+#hotel_details{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
