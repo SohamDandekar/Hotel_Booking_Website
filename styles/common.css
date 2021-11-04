@@ -8,6 +8,11 @@ body{
     height: 100%;
     width: 100%;
     margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 #logo{
     height: 60px;
@@ -18,5 +23,43 @@ body{
     width: 22px;
 }
 header, footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     background-color: rosybrown;
 }
+header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+footer{
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    bottom: 0px;
+}
+#login{
+    justify-content: space-between;
+    margin-right: 1%;
+}
+#login, #logo{
+    align-content: center;
+}
+#contact, #social-media{
+    align-items: center;
+}
+#social-media{
+    /* display: flex; */
+    margin-right: 1%;
+}
+#contact{
+    margin-left: 10%;
+}
+#copyright{
+    font-size: 10px;
+    /* font-weight: bold; */
+    align-self: flex-end;
+    margin-bottom: 0.5%;
+}  
