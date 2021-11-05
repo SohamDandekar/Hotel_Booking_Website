@@ -15,25 +15,37 @@
             <img id="logo" src="assests/images/logo.png" alt="logo" />
             <a id="login" href="login.html" target="_self">Login</a>
         </header>
-        <section>
+        <section id="content_section">
             <article id="search_bar">
                 <input type="text" name="searchbar" id="searchbar" placeholder="City"/>
             </article>
             <article id="city_card">
-                <nav id="nav">
-                    <!--delhi,goa,hyderabad,kolkata-->
-                    <a href="list.html"><img class="city_image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="delhi"/></a>
-                    <img class="city_image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa"/>
-                    <img class="city_image" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="hyderabad"/>
-                    <img class="city_image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="kolkata"/>
-                </nav>
+                <!--delhi,goa,hyderabad,kolkata-->
+            <a href="list.html">
+                <div class="city_image">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="delhi"/>
+                    <div class="city_name"><span class="name">Delhi</span></div>
+                </div>
+            </a>
+                <div class="city_image">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa"/>
+                    <div class="city_name"><span class="name">Goa</span></div>
+                </div>
+                <div class="city_image">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="hyderabad"/>
+                    <div class="city_name"><span class="name">Hyderabad</span></div>
+                </div>
+                <div class="city_image">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="kolkata"/>
+                    <div class="city_name"><span class="name">Kolkata</span></div>
+                </div>
             </article>
             <article id="view_more">
                 <a href="#">View more >></a>
             </article>
         </section>
         <footer>
-            <article><a id="contact" href="contact.html" target="_self">Contact&nbsp;Us</a></article>
+            <article id="contact" ><a href="contact.html" target="_self">Contact&nbsp;Us</a></article>
             <article id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</article>
             <article id="social-media">
                 <nav>

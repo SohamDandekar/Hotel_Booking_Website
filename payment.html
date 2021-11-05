@@ -15,30 +15,34 @@
             <a href="index.html"><img id="logo" src="assests/images/logo.png" alt="logo" /></a>
             <a id="login" href="login.html" target="_self">Login</a>
         </header>
-        <section>
+        <section id="main_content">
             <article id="hotel">
                 <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson blu hotel" />
-                <br/>
-                <h2>Radisson Blu Hotel</h2>
-                <p>#38 of 1,289 hotels in New Delhi</p>
-                <p>National Highway 8, New Delhi 110017 India</p>
+                <!-- <br/> -->
+                <div id="hotel_details">
+                    <h2>Radisson Blu Hotel</h2>
+                    <p>#38 of 1,289 hotels in New Delhi</p>
+                    <p>National Highway 8, New Delhi 110017 India</p>
+                </div>
             </article>
-            <article id="customer_info">
-                <p><strong>Name:</strong> John Doe</p>
-                <p><strong>Number of Adults:</strong> 2</p>
-                <p><strong>Check-in Date:</strong> 06/06/2020</p>
-                <p><strong>Check-out Date:</strong> 08/06/2020</p>
-            </article>
-            <article id="amount_info">
-                <p><strong>Tariff Breakdown:</strong> Rs. 1000 x 2 Adults x 5 Nights</p>
-                <p><strong>Total Amount:</strong> Rs. 10000</p>
-            </article>
-            <article id="pay_button">
-                <a href="#">Pay Now</a>
-            </article>
+            <div id="details">
+                <article id="customer_info">
+                    <p><span class= "heading">Name:</span> John Doe</p>
+                    <p><span class= "heading">Number of Adults:</span> 2</p>
+                    <p><span class= "heading">Check-in Date:</span> 06/06/2020</p>
+                    <p><span class= "heading">Check-out Date:</span> 08/06/2020</p>
+                </article>
+                <article id="amount_info">
+                    <p><span class= "heading">Tariff Breakdown:</span> Rs. 1000 x 2 Adults x 5 Nights</p>
+                    <p><span class= "heading">Total Amount:</span> Rs. 10000</p>
+                </article>
+                <article id="pay_button">
+                    <a href="#">Pay Now</a>
+                </article>
+            </div>
         </section>
         <footer>
-            <article><a id="contact" href="contact.html" target="_self">Contact&nbsp;Us</a></article>
+            <article id="contact"><a href="contact.html" target="_self">Contact&nbsp;Us</a></article>
             <article id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</article>
             <article id="social-media">
                 <nav>

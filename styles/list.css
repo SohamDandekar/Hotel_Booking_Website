@@ -3,11 +3,18 @@
     width: 250px;
 }
 .hotel{
-    display: inline-block;
+    /* display: inline-block; */
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     margin: 2%;
     margin-left: 4%;
-    background-color: rgb(132,136,139);
+    background-color: lightgrey;
     width: 40%;
+}
+.details{
+    display: block;
+    margin-left: 3%;
 }
 ul{
     list-style: none;
@@ -24,4 +31,7 @@ li{
 #view_section{
     width: 400px;
     margin: 0 auto;
+}
+#main_content{
+    height: 700px;
 }

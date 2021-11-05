@@ -16,51 +16,53 @@
             <a id="login" href="login.html" target="_self">Login</a>
         </header>
         <section>
-            <article>
-                <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson blu hotel" />
-                <br/>
+            <article id="payment_details">
+                <div id="image_div">
+                    <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson blu hotel" />
+                </div>
+                <!-- <br/> -->
                 <form action="payment.html" method="get">
-                    <div>
+                    <div class="form_field">
                         <label for="adults">Adults:</label>
                         <input type="number" name="adults" id="adults" min="1" value="1"/>
                     </div>
-                    <div>
+                    <div class="form_field">
                         <label for="name">Name:</label>
                         <input type="text" name="name" id="name" required/>
                     </div>
-                    <div>
+                    <div class="form_field">
                         <label for="checkin_date">From Date:</label>
                         <input type="date" name="checkin_date" id="checkin_date" required/>
                     </div>
-                    <div>
+                    <div class="form_field">
                         <label for="checkout_date">To Date:</label>
                         <input type="date" name="checkout_date" id="checkout_date" required/>
                     </div>
-                    <div>
+                    <div class="form_field">
                         <label for="price">Total:</label>
                         <input type="text" name="price" id="price" disabled required/>
                     </div>
-                    <input type="submit" value="Book Now"/>
+                    <div id="book_button"><input type="submit" value="Book Now"/></div>
                 </form>
-                <section id="hotel_details">
-                    <h2>Radisson Blu Hotel</h2>
-                    <p>RATING</p>
-                    <p>5 Star</p>
-                    <p>AMENITIES</p>
-                    <ul>
-                        <li>Room service</li>
-                        <li>Restaurant</li>
-                        <li>Business center</li>
-                        <li>Fitness center</li>
-                        <li>Pool</li>
-                    </ul>
-                    <h5>DESCRIPTION</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus nobis placeat necessitatibus assumenda error esse sapiente, quas blanditiis. Beatae iure voluptatem laboriosam non magni enim commodi voluptates, fuga facilis porro. Dolor sit amet consectetur adipisicing elit. Autem nisi tempore sequi eius odit, deleniti tempora. Alias dicta doloremque eveniet iste quibusdam quas pariatur, veniam error asperiores a autem ea?</p>
-                </section>
             </article>
+            <section id="hotel_details">
+                <h2>Radisson Blu Hotel</h2>
+                <p class="headings">RATING</p>
+                <p>5 Star</p>
+                <p class="headings">AMENITIES</p>
+                <ul>
+                    <li>Room service</li>
+                    <li>Restaurant</li>
+                    <li>Business center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+                <h5 class="headings">DESCRIPTION</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus nobis placeat necessitatibus assumenda error esse sapiente, quas blanditiis. Beatae iure voluptatem laboriosam non magni enim commodi voluptates, fuga facilis porro. Dolor sit amet consectetur adipisicing elit. Autem nisi tempore sequi eius odit, deleniti tempora. Alias dicta doloremque eveniet iste quibusdam quas pariatur, veniam error asperiores a autem ea?</p>
+            </section>
         </section>
         <footer>
-            <article><a id="contact" href="contact.html" target="_self">Contact&nbsp;Us</a></article>
+            <article id="contact"><a href="contact.html" target="_self">Contact&nbsp;Us</a></article>
             <article id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</article>
             <article id="social-media">
                 <nav>
