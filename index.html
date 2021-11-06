@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/common.css"/>
     <link rel="stylesheet" href="styles/index.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
@@ -13,7 +14,11 @@
     <body>
         <header>
             <img id="logo" src="assests/images/logo.png" alt="logo" />
-            <a id="login" href="login.html" target="_self">Login</a>
+            <!-- <a id="login" href="login.html" target="_self">Login</a> -->
+            <!-- Button trigger modal -->
+            <button id="login_button" type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+                LOGIN
+            </button>
         </header>
         <section id="content_section">
             <article id="search_bar">
@@ -41,11 +46,16 @@
                 </div>
             </article>
             <article id="view_more">
-                <a href="#">View more >></a>
+                <a href="index.html" class="btn btn-secondary">View More</a>
             </article>
         </section>
         <footer>
-            <article id="contact" ><a href="contact.html" target="_self">Contact&nbsp;Us</a></article>
+            <!-- <article id="contact" ><a href="contact.html" target="_self">Contact&nbsp;Us</a></article>-->
+            <!-- Button trigger modal -->
+            <button id="contact_button" type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal1">
+                Contact Us
+            </button>
+  
             <article id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</article>
             <article id="social-media">
                 <nav>
@@ -57,6 +67,64 @@
                 </nav>
             </article>
         </footer>
+        
+        <!-- Login Modal -->
+        <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form id="modal_form" action="index.html" method="get">
+                <div class="form_field">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" placeholder="Enter Username" required/>
+                </div>
+                <div class="form_field"> 
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" autocomplete="off" required/>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <input type="submit" class="btn btn-primary" value="Login">
+        </div>
+      </div>
+    </div>
+        </div>
+        
+        <!-- Contact Modal -->
+        <div class="modal" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Thank you for reaching out!!!</p>
+            <p>Please enter your email and we will get back to you.</p>
+            <form action="index.html" method="get">
+                <div>
+                    <label for="useremail">Email:</label>
+                    <input type="email" name="useremail" id="useremail" placeholder="Enter your email id" required/>
+                </div>
+            </form>
+        </div>
+        <div id="modal_footer_2" class="modal-footer">
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
+        </div>
+        </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </body>
 </div>
 </html>

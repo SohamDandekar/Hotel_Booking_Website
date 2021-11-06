@@ -11,27 +11,45 @@
     margin-left: 4%;
     background-color: lightgrey;
     width: 40%;
+    margin-right: 5%;
+}
+.hotel:hover{
+    background-color: rosybrown;
 }
 .details{
     display: block;
     margin-left: 3%;
+    margin-top: 2%;
 }
 ul{
     list-style: none;
 }
 li{
-    display: inline;
+    /* display: inline; */
     color: black;
-    font-weight: bold;
-    margin: 20px;
+    /* font-weight: bold;  */
+    margin-top: 20px;
 }
-#map_view{
-    display: none;
+
+.nav-link .active{
+    text-decoration: none;
 }
+/* #map_view{
+    /* display: none; 
+    margin-right: 10%;
+} */
 #view_section{
-    width: 400px;
+    width: 250px;
     margin: 0 auto;
+    margin-bottom: 1%;
 }
 #main_content{
     height: 700px;
+}
+#pills-profile{
+    margin-right: 20%;
+}
+.nav-pills .nav-link.active{
+    color: black;
+    background-color: #007bff;
 }
