@@ -1,16 +1,20 @@
-.hotel_image{
-    max-height: 350px;
+/* slider image */
+.slider{
+    height: 350px;
+    width: 500px;
     margin-top: 2%;
     margin-left: 4%;
     margin-right: 4%;
     margin-bottom: 2%;
+    align-items: center;
 }
+/* form section */
 #form_details{
     display: flex;
     flex-direction: column;
     width: 25%;
     border-left: 1px solid black;
-    max-height: 380px;
+    max-height: 400px;
 }
 #hotel_details{
     margin-left: 4%;
@@ -18,47 +22,42 @@
     margin-top: 1%;
     margin-bottom: 2%;
 }
+/* entire section with slider and form */
 #payment_details{
     margin: 2.5% 2% 1% 2%;
     display: flex;
     flex-direction: row;
     border: 1px solid black;
-    max-height: 380px;
+    height: 400px;
 }
+/* contains slider img */
 #image_div{
     width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* input tags */
 .form_input{
     width: 60%;
     margin-left: 10%;
 }
+/* form field contains label and input */
 #form_details .form_field{
     display: flex;
     flex-direction: row;    
     justify-content: space-between;    
     align-items: center;
     margin: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
-/* #book_button{
-    display: flex;
-    /* justify-content: center; 
-    width: 150px;
-    height: 35px;
-    padding: 2%; 
-    margin-left: 34%;
-} */
 .headings{
     font-family: cursive;
-    font-weight: bold;
 }
+/* Book Now button */
 form .btn{
     width: 100px;
     height: 35px;
-    /* padding: 2%;  */
     margin-left: 38%;
     margin-top: 8%;
     transition: none;
@@ -67,4 +66,131 @@ form .btn{
     color: #28a745;
     background-color: #e0e0e0;
     border-color: #28a745;
+}
+/* star ratings */
+.checked, .fa-star-half-full {
+    color: orange;
+}
+/* for next and previous buttons of slider */
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after{
+  content: '>';
+  font-size: 55px;
+  color: rosybrown;
+  position: absolute;
+  top: 40%;
+  left: 300%;
+}
+
+.carousel-control-prev-icon:after{
+  content: '<';
+  font-size: 55px;
+  color: rosybrown;
+  position: absolute;
+  top: 40%;
+  left: -200%;
+}
+
+/* Media Queries */
+/* screen size less than equal to 576px */
+@media only screen and (max-width: 576px){
+    .slider{
+        height: 275px;
+        width: 440px;
+        margin: 0;
+        margin-left: 20.5%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    #payment_details{
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+        margin-top: 2.5%;
+    }
+    #image_div{
+        height: 280px;
+    }
+    #form_details{
+        height: auto;
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid black;
+    }
+    .carousel-control-next-icon:after{
+        top: 35%;
+        left: 35%;
+    }
+    #form_details .form_field{
+        margin-bottom: 1%;
+    }
+    form .btn{
+        margin: 0 auto;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    } 
+    .carousel-control-prev-icon:after{
+        top: 35%;
+        left: 150%;
+    }
+    header, footer{
+        z-index: 99;
+    }
+    *{
+        font-size: 14px;
+    }
+}
+/* screen size between 577px to 768px */
+@media only screen and (min-width: 577px) and (max-width: 768px){
+    .slider{
+        height: 365px;
+        width: 473px;
+        margin-top: 0.5%;
+        margin-left: 1%;
+        margin-right: 4%;
+        margin-bottom: 0.5%;
+        align-items: center;
+    }
+    #payment_details{
+        margin: none;
+        height: 375px;
+    }
+    #image_div{
+        justify-content: flex-start;
+        width: 65%;
+    }
+    .carousel-control-next-icon:after{
+        top: 40%;
+        left: 35%;
+      }
+      
+      .carousel-control-prev-icon:after{
+        top: 40%;
+        left: 25%;
+      }
+      .form_input{
+        width: 60%;
+    }
+    #form_details .form_field{
+        margin-bottom: 0.2%;
+    }
+    #form_details{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+    }
+    form .btn{
+        margin: 0 auto;
+        margin-top: 8%;
+    }
+    #main_content{
+        height: 890px;
+    }
 }

@@ -3,6 +3,7 @@
   width: 150px;
   border-radius: 25%;
 }
+/* div containing city img and name */
 .city_image{
     height: 150px;
     width: 150px;
@@ -10,6 +11,7 @@
     border-radius: 25%;
     box-shadow: 10px 10px 10px grey; 
 }
+/* name at the center of img card */
 .name{
   margin: 0;
   position: absolute;
@@ -26,14 +28,13 @@
   display: none;
   color: #f1f1f1;
   border-radius: 25%;
-  /* margin: 0;
-  margin-top: 50%;
-  margin-bottom: 50%; */
 }
+/* Changing background when img hovered */
 .city_image:hover .city_name {
   display: block;
   background: rgba(0, 0, 0, 0.5);
 }
+/* section containing search bar */
 #search_bar{
     display: flex;
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
@@ -43,6 +44,7 @@
     background-size: cover;
     justify-content: center;
 }
+/* the search bar itself */
 #searchbar{
   align-self: center;
   justify-items: center;
@@ -56,15 +58,14 @@
 #searchbar:focus{
   outline: none;
 }
+/* City cards section */
 #city_card{
   height: 310px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* align-items: baseline; */
-  /* flex-wrap: nowrap; */
-  /* margin-top: 1%; */
 }
+/* view more button */
 #view_more{
   text-align: center;
   margin-top: 1%;
@@ -73,4 +74,125 @@
 #content_section{
   display: flex;
   flex-direction: column;
+}
+
+/* Media Queries*/
+
+/* screen size less than equal to 576px */
+@media only screen and (max-width:576px){
+  #searchbar{
+    width: 180px;
+  }
+  #city_card{
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80%;
+    margin-bottom: 85%;
+    z-index: -99;
+    justify-content: center;
+    align-content: space-between;
+  }
+  .city_image{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px grey;
+    margin-bottom: 5%; 
+  }
+  #view_more{
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  #city_card a{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 3%;
+    margin-top: 10%;
+    z-index: 99;
+  }
+  #city_card img{
+    height: 200px;
+    width: 200px;
+    border-radius: 25%;
+  }
+  .city_image{
+      height: 200px;
+      width: 200px;
+      position: relative;
+      border-radius: 25%;
+      box-shadow: 10px 10px 10px grey; 
+  }
+  #search_bar{
+    height: 330px;
+  }
+  *{
+    font-size: 14px;
+  }
+  .name{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .city_image .city_name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #f1f1f1;
+    border-radius: 25%;
+  }
+  .city_image:hover .city_name {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+/* screen size between 577px to 768px */
+@media only screen and (min-width:577px) and (max-width:768px) {
+  #searchbar{
+    width: 320px;
+  }
+  #search_bar{
+    height: 380px;
+  }
+  #city_card{
+    height: 310px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 20%;
+    z-index: -99;
+    justify-content: space-evenly;
+    max-width: 70%;
+  }
+  .city_image{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px grey; 
+    margin-bottom: 2%;
+    margin-left: 1%;
+  }
+  #city_card img{
+    height: 200px;
+    width: 200px;
+    border-radius: 25%;
+  }
+  #city_card a{
+    margin-bottom: 2%;
+    margin-top: 1%;
+    z-index: 99;
+  }
+  .city_image:hover .city_name {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+  }
 }

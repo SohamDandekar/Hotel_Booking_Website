@@ -4,12 +4,14 @@ body{
     margin: 0px;
     background-color: #e0e0e0;
 }
+/* Body container */
 #body_div{
     height: 100%;
     width: 100%;
     margin: 0px;
     font-family: 'Ubuntu', sans-serif;
 }
+/* Link tags */
 a{
     text-decoration: none;
     color: black;
@@ -18,9 +20,11 @@ a:hover{
     text-decoration: none;
     color: black;
 }
+/* Hotel logo */
 #logo{
     height: 60px;
     width: 60px;
+    margin-left: 1%;
 }
 .social_media{
     height: 20px;
@@ -43,9 +47,6 @@ footer{
     width: 100%;
     position: sticky;
     bottom: 0px;
-}
-#logo{
-    margin-left: 1%;
 }
 #login{
     justify-content: space-between;
@@ -70,6 +71,7 @@ footer{
     display: flex;
     flex-direction: column;
 }
+/* Contains label and input */
 .form_field{
     display: flex;
     justify-content: space-evenly;
@@ -88,6 +90,7 @@ footer{
 #contact_button{
     margin-left: 2%;
 }
+/* Changing opacity when modal is clicked */
 .modal-backdrop{
     opacity: 0 !important;
 }

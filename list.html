@@ -2,24 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap Link -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="styles/common.css"/>
         <link rel="stylesheet" href="styles/list.css"/>
+        <!-- Google Fonts Link -->
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
+        <!-- Star Rating Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>List</title>
     </head>
 <div id="body_div">
     <body>
         <header>
             <a href="index.html"><img id="logo" src="assests/images/logo.png" alt="logo" /></a>
-            <!-- <a id="login" href="login.html" target="_self">Login</a> -->
-            <!-- Button trigger modal -->
+            <!-- Login button trigger -->
             <button id="login_button" type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
                 LOGIN
             </button>
         </header>
+        <!-- Main Content Section -->
         <section id="main_content">
             <article id="view_section">
                 <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
@@ -29,50 +32,67 @@
                     <li class="nav-item">
                       <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Map View</a>
                     </li>
-                  </ul>
+                </ul>
             </article>
-                  <div class="tab-content" id="pills-tabContent">
+                <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <article id="list_view">
-                        <a href="detail.html">
-                            <section class="hotel">
-                                <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson blu hotel" />
-                                <div class="details">
+                        <article id="list_view">
+                            <a href="detail.html">
+                                <section class="hotel">
+                                    <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson blu hotel" />
+                                    <div class="details">
                                     <h3>Radisson Blu Hotel</h3>
-                                    <p>5.0 Star</p>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <p>New Delhi</p>
+                                    </div>
+                                </section>
+                            </a>    
+                                <section class="hotel">
+                                    <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="the lalit hotel" />
+                                    <div class="details">
+                                        <h3>The Lalit New Delhi</h3>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star-half-full"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p>New Delhi</p>
+                                    </div>
+                                </section>
+                            <section class="hotel">
+                                <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="taj palace" />
+                                <div class="details">
+                                    <h3>Taj Palace</h3>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
                                     <p>New Delhi</p>
                                 </div>
                             </section>
-                        </a>    
-                        <section class="hotel">
-                            <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="the lalit hotel" />
-                            <div class="details">
-                                <h3>The Lalit New Delhi</h3>
-                                <p>4.5 Star</p>
-                                <p>New Delhi</p>
-                            </div>
-                        </section>
-                        <section class="hotel">
-                            <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="taj palace" />
-                            <div class="details">
-                                <h3>Taj Palace</h3>
-                                <p>4.0 Star</p>
-                                <p>New Delhi</p>
-                            </div>
-                        </section>
-                    </article>
+                        </article>
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <article id="map_view">
                         <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map image" />
                     </article>
                     </div>
-                  </div>
+                </div>
             </article>
         </section>
         <footer>
-            <!-- <article id="contact" ><a href="contact.html" target="_self">Contact&nbsp;Us</a></article>-->
-            <!-- Button trigger modal -->
+            <!-- Contact Us button trigger -->
             <button id="contact_button" type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal1">
                 Contact Us
             </button>
@@ -81,9 +101,7 @@
             <article id="social-media">
                 <nav>
                     <a href="http://www.facebook.com" target="_blank"><img class="social_media" src="assests/images/facebook.png" alt="facebook"></a>
-                    <!-- <sub>&#8209;</sub> -->
                     <a href="http://www.instagram.com" target="_blank"><img class="social_media" src="assests/images/instagram.png" alt="instagram"></a>
-                    <!-- <sub>&#8209;</sub> -->
                     <a href="http://www.twitter.com" target="_blank"><img class="social_media" src="assests/images/twitter.png" alt="twitter"></a>
                 </nav>
             </article>
@@ -115,36 +133,36 @@
                 </div>
               </div>
             </div>
-                </div>
+        </div>
                 
                 <!-- Contact Modal -->
-                <div class="modal" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    <p>Thank you for reaching out!!!</p>
-                    <p>Please enter your email and we will get back to you.</p>
-                    <form action="index.html" method="get">
-                        <div>
-                            <label for="useremail">Email:</label>
-                            <input type="email" name="useremail" id="useremail" placeholder="Enter your email" required/>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                    </form>
+                        <div class="modal-body">
+                            <p>Thank you for reaching out!!!</p>
+                            <p>Please enter your email and we will get back to you.</p>
+                            <form action="index.html" method="get">
+                                <div>
+                                    <label for="useremail">Email:</label>
+                                    <input type="email" name="useremail" id="useremail" placeholder="Enter your email" required/>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="modal_footer_2" class="modal-footer">
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </div>
+                    </div>
                 </div>
-                <div id="modal_footer_2" class="modal-footer">
-                    <input type="submit" class="btn btn-primary" value="Submit">
-                </div>
-                </div>
-                </div>
-                </div>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+            </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </body>
 </div>
 </html>

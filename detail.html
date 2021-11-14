@@ -2,30 +2,52 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap Link -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="styles/common.css"/>
         <link rel="stylesheet" href="styles/detail.css"/>
+        <!-- Google Fonts Link -->
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
+        <!-- Star Rating Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Detail</title>
     </head>
 <div id="body_div">
     <body>
         <header>
             <a href="index.html"><img id="logo" src="assests/images/logo.png" alt="logo" /></a>
-            <!-- <a id="login" href="login.html" target="_self">Login</a> -->
-            <!-- Button trigger modal -->
+            <!-- Login button trigger -->
             <button id="login_button" type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
                 LOGIN
             </button>
         </header>
-        <section>
+        <!-- Main Content Section -->
+        <section id="main_content">
             <article id="payment_details">
                 <div id="image_div">
-                    <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson blu hotel" />
+                    <div id="carouselExampleControls" class="carousel" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img  class="slider" class="d-block w-50" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="poolside">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="slider" class="d-block w-50" src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" alt="spa">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="slider" class="d-block w-50" src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" alt="radisson blu plaza">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
                 </div>
-                <!-- <br/> -->
                 <form id="form_details" action="payment.html" method="get">
                     <div class="form_field">
                         <label for="adults">Adults:</label>
@@ -47,15 +69,20 @@
                         <label for="price">Total:</label>
                         <input class="form_input" type="text" name="price" id="price" disabled required/>
                     </div>
-                    <!-- <div id="book_button"><input type="submit" value="Book Now"/></div> -->
                     <input class = "btn btn-success" type="submit" value="Book Now"/>
                 </form>
             </article>
             <section id="hotel_details">
                 <h2>Radisson Blu Hotel</h2>
-                <p class="headings">RATING</p>
-                <p>5 Star</p>
-                <p class="headings">AMENITIES</p>
+                <h5 class="headings">RATING</h5>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <h5 class="headings">AMENITIES</h5>
                 <ul>
                     <li>Room service</li>
                     <li>Restaurant</li>
@@ -64,12 +91,11 @@
                     <li>Pool</li>
                 </ul>
                 <h5 class="headings">DESCRIPTION</h5>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus nobis placeat necessitatibus assumenda error esse sapiente, quas blanditiis. Beatae iure voluptatem laboriosam non magni enim commodi voluptates, fuga facilis porro. Dolor sit amet consectetur adipisicing elit. Autem nisi tempore sequi eius odit, deleniti tempora. Alias dicta doloremque eveniet iste quibusdam quas pariatur, veniam error asperiores a autem ea?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus nobis placeat necessitatibus assumenda error esse sapiente, quas blanditiis. Beatae iure voluptatem laboriosam non magni enim commodi vol.</p>
             </section>
         </section>
         <footer>
-            <!-- <article id="contact" ><a href="contact.html" target="_self">Contact&nbsp;Us</a></article>-->
-            <!-- Button trigger modal -->
+            <!-- Contact Us button trigger -->
             <button id="contact_button" type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal1">
                 Contact Us
             </button>
@@ -78,9 +104,7 @@
             <article id="social-media">
                 <nav>
                     <a href="http://www.facebook.com" target="_blank"><img class="social_media" src="assests/images/facebook.png" alt="facebook"></a>
-                    <!-- <sub>&#8209;</sub> -->
                     <a href="http://www.instagram.com" target="_blank"><img class="social_media" src="assests/images/instagram.png" alt="instagram"></a>
-                    <!-- <sub>&#8209;</sub> -->
                     <a href="http://www.twitter.com" target="_blank"><img class="social_media" src="assests/images/twitter.png" alt="twitter"></a>
                 </nav>
             </article>
