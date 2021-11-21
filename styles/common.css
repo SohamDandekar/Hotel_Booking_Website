@@ -36,6 +36,7 @@ header, footer{
     justify-content: space-between;
     align-items: center;
     background-color: rosybrown;
+    z-index: 99;
 }
 header{
     position: sticky;
