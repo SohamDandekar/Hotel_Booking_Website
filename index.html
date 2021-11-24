@@ -13,13 +13,7 @@
 </head>
 <div id="body_div">
     <body>
-        <header>
-            <img id="logo" src="assests/images/logo.png" alt="logo" />
-            <!-- Login button trigger -->
-            <button id="login_button" type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
-                LOGIN
-            </button>
-        </header>
+        <header></header>
         <!-- Main Content Section -->
         <section id="content_section">
             <article id="search_bar">
@@ -47,24 +41,10 @@
                 </div>
             </article>
             <article id="view_more">
-                <a href="index.html" class="btn btn-secondary">View More</a>
+                <button id="view_more_button" class="btn btn-secondary">View More</button>
             </article>
         </section>
-        <footer>
-            <!-- Contact Us button trigger -->
-            <button id="contact_button" type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal1">
-                Contact Us
-            </button>
-  
-            <article id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</article>
-            <article id="social-media">
-                <nav>
-                    <a href="http://www.facebook.com" target="_blank"><img class="social_media" src="assests/images/facebook.png" alt="facebook"></a>
-                    <a href="http://www.instagram.com" target="_blank"><img class="social_media" src="assests/images/instagram.png" alt="instagram"></a>
-                    <a href="http://www.twitter.com" target="_blank"><img class="social_media" src="assests/images/twitter.png" alt="twitter"></a>
-                </nav>
-            </article>
-        </footer>
+        <footer></footer>
         
         <!-- Login Modal -->
         <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -89,7 +69,7 @@
             </form>
         </div>
         <div class="modal-footer">
-            <input type="submit" class="btn btn-primary" value="Login">
+            <input id="login_modal_button" type="submit" class="btn btn-primary" value="Login">
         </div>
       </div>
     </div>
@@ -123,7 +103,9 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <!-- index.js Link -->
+        <!-- common.js link -->
+        <script src="scripts/common.js"></script>
+        <!-- index.js link -->
         <script src="scripts/index.js"></script>
     </body>
 </div>

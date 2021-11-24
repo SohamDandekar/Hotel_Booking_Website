@@ -20,7 +20,23 @@ for(var i = 0; i < city_names.length; i++){
     cityName.appendChild(textName);
     cityImg.appendChild(img);
     cityImg.appendChild(cityName);
-    cityCard.appendChild(cityImg);   
+    cityCard.appendChild(cityImg);
+    cityCard.style.display = 'none';   
 }
 var viewSection = document.getElementById('view_more');
 mainSection.insertBefore(cityCard,viewSection);
+
+//View button feature
+var viewButton = document.getElementById('view_more_button');
+
+var viewFeature = () => {
+    if(viewButton.innerText === "View Less"){
+        cityCard.style.display = 'none';
+        viewButton.innerText = "View More"; 
+    }else{
+    cityCard.style.display = 'flex';
+    viewButton.innerText = "View Less";
+    }
+}
+
+viewButton.addEventListener('click',viewFeature);
