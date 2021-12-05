@@ -1,20 +1,16 @@
 /* slider image */
 .slider{
-    height: 350px;
-    width: 500px;
-    margin-top: 2%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 2%;
+    height: 425px;
+    width: 995px;
     align-items: center;
 }
 /* form section */
 #form_details{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 30%;
     border-left: 1px solid black;
-    max-height: 400px;
+    max-height: 480px;
 }
 #hotel_details{
     margin-left: 4%;
@@ -28,11 +24,11 @@
     display: flex;
     flex-direction: row;
     border: 1px solid black;
-    height: 400px;
+    height: 450px;
 }
 /* contains slider img */
 #image_div{
-    width: 75%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +55,7 @@ form .btn{
     width: 100px;
     height: 35px;
     margin-left: 38%;
-    margin-top: 8%;
+    margin-top: 6%;
     transition: none;
 }
 .btn-success {
@@ -83,19 +79,19 @@ form .btn{
 .carousel-control-next-icon:after{
   content: '>';
   font-size: 55px;
-  color: rosybrown;
+  color: black;
   position: absolute;
   top: 40%;
-  left: 300%;
+  left: 50%;
 }
 
 .carousel-control-prev-icon:after{
   content: '<';
   font-size: 55px;
-  color: rosybrown;
+  color: black;
   position: absolute;
   top: 40%;
-  left: -200%;
+  left: 25%;
 }
 
 /* Media Queries */

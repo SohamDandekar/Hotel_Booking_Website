@@ -12,6 +12,7 @@
     background-color: lightgrey;
     width: 40%;
     margin-right: 5%;
+    padding-right: 4%;
 }
 .hotel:hover{
     background-color: rosybrown;
@@ -38,7 +39,7 @@ li{
     margin-bottom: 1%;
 }
 #main_content{
-    height: 700px;
+    height: 100%;
 }
 /* div containing map_view section */
 #pills-profile{
@@ -55,6 +56,10 @@ li{
 /* star rating */
 .checked, .fa-star-half-full {
     color: orange;
+}
+
+#map_view{
+    height: 560px;
 }
 
 /* Media Queries */
