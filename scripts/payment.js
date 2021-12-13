@@ -42,6 +42,10 @@ xhr.addEventListener("readystatechange", function () {
         </article>`;
 
         document.getElementById('details').innerHTML = customerDetails;
+        document.getElementById('loader').style.display = 'none';
+        document.getElementsByTagName('header')[0].style.display = 'flex';
+        document.getElementById('main_content').style.display = 'block';
+        document.getElementsByTagName('footer')[0].style.display = 'flex';
         
         // Pay Now button functionality
         var payButton = document.getElementById('pay_now_button');
@@ -56,6 +60,6 @@ xhr.addEventListener("readystatechange", function () {
 
 xhr.open("GET", hotelInfoUrl);
 xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
-xhr.setRequestHeader("x-rapidapi-key", "640a67c248mshfe30e9edeecd18cp1d28bbjsnd8976f927fb0");
+xhr.setRequestHeader("x-rapidapi-key", "3981dbf89cmshbb4facddea731f2p1185c1jsn91ee9129640e");
 
 xhr.send(data);

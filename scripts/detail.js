@@ -58,7 +58,7 @@ const data1 = null;
 const xhr1 = new XMLHttpRequest();
 xhr1.withCredentials = false;
 
-xhr1.addEventListener("readystatechange", function () {
+xhr1.addEventListener("readystatechange", function (){
 	if (this.readyState === this.DONE) {
 		var hotelPhotos = JSON.parse(this.responseText).data;
         var hotelPhotoDiv = `<div class="carousel-item active">
@@ -75,7 +75,7 @@ xhr1.addEventListener("readystatechange", function () {
 
 xhr1.open("GET", urlForPhotos);
 xhr1.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
-xhr1.setRequestHeader("x-rapidapi-key", "640a67c248mshfe30e9edeecd18cp1d28bbjsnd8976f927fb0");
+xhr1.setRequestHeader("x-rapidapi-key", "3981dbf89cmshbb4facddea731f2p1185c1jsn91ee9129640e");
 
 xhr1.send(data1);
 
@@ -129,13 +129,17 @@ xhr.addEventListener("readystatechange", function () {
         <p>${hotelData.description}</p>`
         document.getElementById('hotel_details').innerHTML = hotelTemplate;
         var heading_2 = document.getElementsByClassName('headings')[1];
-        document.getElementById('hotel_details').insertBefore(ratingDiv,heading_2);   
+        document.getElementById('hotel_details').insertBefore(ratingDiv,heading_2);
+        document.getElementById('loader').style.display = 'none';
+        document.getElementsByTagName('header')[0].style.display = 'flex';
+        document.getElementById('main_content').style.display = 'block';
+        document.getElementsByTagName('footer')[0].style.display = 'flex';   
 	}
 });
 
 xhr.open("GET", hotelInfoUrl);
 xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
-xhr.setRequestHeader("x-rapidapi-key", "640a67c248mshfe30e9edeecd18cp1d28bbjsnd8976f927fb0");
+xhr.setRequestHeader("x-rapidapi-key", "3981dbf89cmshbb4facddea731f2p1185c1jsn91ee9129640e");
 
 xhr.send(data);
 

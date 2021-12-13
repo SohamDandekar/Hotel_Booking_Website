@@ -1,3 +1,32 @@
+/* Loader css */
+@keyframes loadingAnimation{
+  from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+#loader{
+  animation-name: loadingAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 70px;
+  height: 70px;
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 22%;
+  margin-bottom: 22%;
+  border-top-color: #444444;
+}
+
+header, footer{
+  display: none;
+}
+
 .city_card img{
   height: 150px;
   width: 150px;
@@ -43,9 +72,10 @@
     background-position: center;
     background-size: cover;
     justify-content: center;
+    flex-direction: column;
 }
 /* the search bar itself */
-#searchbar{
+.searchbar{
   align-self: center;
   justify-items: center;
   width: 400px;
@@ -54,9 +84,23 @@
   background-color: #f1f1f1;
   padding: 10px;
   font-size: 16px;
+  border-bottom: 2px solid lightgray;
 }
-#searchbar:focus{
+.searchbar:focus{
   outline: none;
+}
+#search_bar a{
+  align-self: center;
+  justify-items: center;
+}
+
+a .searchbar{
+  background-color: white;
+}
+
+a .searchbar:hover{
+  cursor: pointer;
+  background-color: #EAE9EA;
 }
 /* City cards section */
 .city_card{
@@ -72,7 +116,7 @@
   margin-bottom: 3.5%;
 }
 #content_section{
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 

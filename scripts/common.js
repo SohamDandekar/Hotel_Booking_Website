@@ -1,9 +1,18 @@
 // Header & Footer templates
-var header = `<a href="index.html"><img id="logo" src="assests/images/logo.png" alt="logo" /></a>
+if(document.title === "Index"){
+    var header = `<a><img id="logo" src="assests/images/logo.png" alt="logo" /></a>
+<!-- Login button trigger -->
+<button id="login_button" type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+    LOGIN
+</button>`;    
+}else{
+    var header = `<a href="index.html"><img id="logo" src="assests/images/logo.png" alt="logo" /></a>
 <!-- Login button trigger -->
 <button id="login_button" type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
     LOGIN
 </button>`;
+}
+
 var footer = `<!-- Contact Us button trigger -->
 <button id="contact_button" type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal1">
     Contact Us
@@ -45,6 +54,22 @@ var login = () => {
     if(localStorage.getItem('username') === user_name && localStorage.getItem('password') === user_pwd){
         alert("Successfully loggedin");
         $('#exampleModal').modal('hide');
+        document.getElementById('loader').style.display = 'block';
+        document.getElementsByTagName('header')[0].style.display = 'none';
+        if(document.title === "Index")
+            document.getElementById('content_section').style.display = 'none';
+        else
+            document.getElementById('main_content').style.display = 'none';
+        document.getElementsByTagName('footer')[0].style.display = 'none';
+        setTimeout(()=>{
+            document.getElementById('loader').style.display = 'none';
+            document.getElementsByTagName('header')[0].style.display = 'flex';
+            if(document.title === "Index")
+                document.getElementById('content_section').style.display = 'block';
+            else
+                document.getElementById('main_content').style.display = 'block';
+            document.getElementsByTagName('footer')[0].style.display = 'flex';
+        },900);
         document.getElementById('login_button').innerText = "LOGOUT";
         //For enabling pay now button in payment.html
         if(document.title === "Payment")
@@ -63,6 +88,22 @@ var logoutButton = document.getElementById('login_button');
 
 var logout = () => {
     if(logoutButton.innerText === "LOGOUT"){
+        document.getElementById('loader').style.display = 'block';
+        document.getElementsByTagName('header')[0].style.display = 'none';
+        if(document.title === "Index")
+            document.getElementById('content_section').style.display = 'none';
+        else
+            document.getElementById('main_content').style.display = 'none';
+        document.getElementsByTagName('footer')[0].style.display = 'none';
+        setTimeout(()=>{
+            document.getElementById('loader').style.display = 'none';
+            document.getElementsByTagName('header')[0].style.display = 'flex';
+            if(document.title === "Index")
+                document.getElementById('content_section').style.display = 'block';
+            else
+                document.getElementById('main_content').style.display = 'block';
+            document.getElementsByTagName('footer')[0].style.display = 'flex';
+        },900);
         logoutButton.innerText = "LOGIN";
         //For disabling pay now button in payment.html
         if(document.title === "Payment")
